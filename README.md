@@ -1,4 +1,7 @@
 # KariyerNet
+
+YouTube Link : https://www.youtube.com/watch?v=dYq3GBzh_zo
+
 Bu proje, React ve Node.js kullanılarak geliştirilmiş bir KariyerNet benzeri iş arama uygulamasıdır. Uygulamanın frontend (React) ve backend (Node.js & Express) olmak üzere iki ana bileşeni bulunmaktadır. Veriler MongoDB Atlas üzerinden yönetilmektedir.
 
 Proje Dizimi : 
