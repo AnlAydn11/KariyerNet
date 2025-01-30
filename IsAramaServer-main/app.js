@@ -16,7 +16,7 @@ const UserRoute = require('./router/UserRoute');
 
 
 var store = new MongoDBStore({
-  uri: process.env.MongoDB,
+  uri: process.env.MongoConnect,
   collection: 'mySession',
 });
 
