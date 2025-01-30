@@ -12,7 +12,7 @@ export default function Login() {
   async function handleSubmit(event) {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5050/login", {
+      const response = await axios.post("https://kariyernet-6.onrender.com/login", {
         email,
         password,
       });
@@ -34,7 +34,7 @@ export default function Login() {
   }
 
   function handleGoogleLogin() {
-    window.location.href = "http://localhost:5050/auth/google"; 
+    window.location.href = "https://kariyernet-6.onrender.com/auth/google"; 
   }
 
   return (
