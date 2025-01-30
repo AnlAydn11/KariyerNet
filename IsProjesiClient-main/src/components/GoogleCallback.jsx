@@ -17,7 +17,7 @@ export default function GoogleCallback() {
     
       async function fetchUserData() {
         try {
-          const response = await fetch("http://localhost:5050/profile", {
+          const response = await fetch("https://kariyernet-6.onrender.com/profile", {
             headers: {
               Authorization: `Bearer ${token}`, 
             },
