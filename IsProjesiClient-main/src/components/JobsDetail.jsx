@@ -16,7 +16,7 @@ export default function JobDetail() {
   useEffect(() => {
     async function fetchFilterData() {
       try {
-        const response = await axios.get("http://localhost:5050/filters");
+        const response = await axios.get("https://kariyernet-6.onrender.com/filters");
         setCountries(response.data.countries);
         setCities(response.data.cities);
         setTowns(response.data.towns);
@@ -30,7 +30,7 @@ export default function JobDetail() {
   
   const fetchJobs = async () => {
     try {
-      const response = await axios.get("http://localhost:5050/jobs", {
+      const response = await axios.get("https://kariyernet-6.onrender.com/jobs", {
         params: filters,
       });
       setFilteredJobs(response.data);
