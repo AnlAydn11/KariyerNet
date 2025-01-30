@@ -17,10 +17,10 @@ export default function Home() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const citiesResponse = await axios.get("http://localhost:5050/cities");
+        const citiesResponse = await axios.get("https://kariyernet-6.onrender.com/cities");
         setCities(citiesResponse.data);
 
-        const jobsResponse = await axios.get("http://localhost:5050/jobs");
+        const jobsResponse = await axios.get("https://kariyernet-6.onrender.com/jobs");
         const uniqueTitles = [
           ...new Set(jobsResponse.data.map((job) => job.title)),
         ];
