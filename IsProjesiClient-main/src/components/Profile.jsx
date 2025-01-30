@@ -10,7 +10,7 @@ export default function Profile() {
     const fetchApplications = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:5050/profileDetail/applications", {
+        const response = await axios.get("https://kariyernet-6.onrender.com/profileDetail/applications", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
