@@ -15,7 +15,7 @@ export default function JobsInnerDetail() {
   useEffect(() => {
     async function fetchJobDetail() {
       try {
-        const response = await axios.get(`http://localhost:5050/jobs/${id}`); 
+        const response = await axios.get(`https://kariyernet-6.onrender.com/jobs/${id}`); 
         setJob(response.data); 
         setLoading(false); 
       } catch (err) {
@@ -35,7 +35,7 @@ export default function JobsInnerDetail() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5050/apply",
+        "https://kariyernet-6.onrender.com/apply",
         { jobId: id },
         { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
       );
