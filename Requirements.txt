@@ -1,0 +1,4 @@
+Node.js (v16 veya üstü) 
+NPM (Node Package Manager) 
+Git (En son sürüm önerilir) 
+MongoDB Atlas Hesabı
